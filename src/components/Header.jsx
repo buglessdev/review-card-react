@@ -6,13 +6,12 @@ export default function Header({text,fontColor,font,fontSize}) {
   const headerStyles = {
     color:fontColor,
     fontFamily:font,
-    fontSize:fontSize
+    fontSize:fontSize,
+    width:'50%',
   }
     return (
-    <header style={headerStyles}>
-        <div className="container">
+    <header>
             <h2 className='header-text'>{text}</h2>
-        </div>
     </header>
   )
 }
@@ -21,7 +20,7 @@ Header.defaultProps ={
     text:"What others think about the product",
     fontColor:'#191B4A',
     font:"Merriweather",
-    fontSize:34
+    fontSize:14
 }
 
 Header.propTypes = {

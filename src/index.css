@@ -5,5 +5,52 @@
     --yellow-fill-color:#FFD66C;
     --yellow-stroke-color:#EFB153;
     --light-text-color:#73749C;
+
+}
+
+.container{
+    max-width:500px;
+    margin:0 auto;
+}
+
+.card{
+    border-radius:10px;
+    box-shadow:10px 10px 10px 5px rgba(0,0,0,.1);
+    padding:10px 20px;
+}
+
+
+
+.rating-container{
+}
+.review-status-container{
+    position: relative;
+}
+.header{
     
+}
+.heading-text{
+    width:50%;
+}
+.average-rating{
+    position: absolute;
+    top:25%;
+    right:0px;
+    width:40%;
+    box-shadow:5px 5px 5px 5px rgba(0,0,0,.1);
+}
+.header h1{
+    font-family:'Merriweather',sans-serif;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.star{
+    padding:10px;
+}
+.rating{
+    padding:10px;
 }
