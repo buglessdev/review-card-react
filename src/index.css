@@ -1,56 +1,178 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@500;600;700&display=swap');
 
-:root{
-    --primary-color:#191B4A;
-    --yellow-fill-color:#FFD66C;
-    --yellow-stroke-color:#EFB153;
-    --light-text-color:#73749C;
+:root {
+    --primary-color: #191B4A;
+    --yellow-fill-color: #FFD66C;
+    --yellow-stroke-color: #EFB153;
+    --light-text-color: #73749C;
 
 }
 
-.container{
-    max-width:500px;
-    margin:0 auto;
-}
-
-.card{
-    border-radius:10px;
-    box-shadow:10px 10px 10px 5px rgba(0,0,0,.1);
-    padding:10px 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 
-.rating-container{
-}
-.review-status-container{
+
+
+/* Feed back form styles */
+
+/* Input Styles */
+
+p.input-container {
+    width: 100%;
     position: relative;
-}
-.header{
-    
-}
-.heading-text{
-    width:50%;
-}
-.average-rating{
-    position: absolute;
-    top:25%;
-    right:0px;
-    width:40%;
-    box-shadow:5px 5px 5px 5px rgba(0,0,0,.1);
-}
-.header h1{
-    font-family:'Merriweather',sans-serif;
+    top: 50px;
+    margin-bottom: 25px;
 }
 
-.row{
+label {
+    color: #CCC;
+    position: absolute;
+    cursor: text;
+    transform: translateY(-25px);
+    transition: transform 0.3s ease;
+    left: 0;
+    bottom: -15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    transition: 0.6s;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    background-color: transparent;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-bottom: 1px solid #28a2a2;
+}
+
+
+/* Input Animation Styles */
+.animation label {
+    transform: translateY(-55px);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.animation-color label {
+    color: #28a2a2;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, .1);
+    padding: 10px 20px;
+}
+
+
+
+/* General styles */
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-container .right {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid salmon; */
+}
+
+.heading-text {
+    width: 50%;
+}
+
+.average-rating {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    height: 100px;
+    justify-self: flex-end;
+    width: 30%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .1);
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: small;
+}
+
+.header h1 {
+    font-family: 'Merriweather', sans-serif;
+}
+
+.row {
     display: flex;
     justify-content: center;
 }
 
-.star{
-    padding:10px;
+.star,
+.rating {
+    padding: 2.5px;
 }
-.rating{
-    padding:10px;
+
+.rating {
+    /* padding: 10px; */
+}
+
+.progress-bars-container {
+    margin: 40px 0;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 50px;
+    display: block;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.progress-bar-container {
+    margin-top: 15px;
+    display: flex;
+}
+
+.pb-text {
+    /* display: flex; */
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    padding: 0 5px;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
 }
